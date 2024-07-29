@@ -54,50 +54,48 @@ namespace minimalAPIMongo.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(string id, Product updatedProduct)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Product>> GetById(string id)
         {
-
             try
-            {
-                var product = await mongoDbService.GetAsync(id);
-
-                if (product == null)
-                {
-                    return NotFound("Product not found");
-                }
-
-                updatedProduct.Id = product.Id; 
-
-                await mongoDbService.UpdateAsync(id, mongoDbService);
+            { 
+                var product = await _product.Find(x => x.ProductId == id).FirstOrDefaultAsync();   
+                return product == null ? NotFound() : Ok(product);
             }
-            catch (Exception e)
+            catch (Exception e) 
             {
                 return BadRequest(e.Message);
             }
         }
 
-
-
-        [HttpPut("{id:length(24)}")]
-        public async Task<IActionResult> Update(string id, Book updatedBook)
+        [HttpPut]
+        public async Task<ActionResult<Product>> Update(Product product)
         {
-            var book = await _booksService.GetAsync(id);
-
-            if (book is null)
+            try 
             {
-                return NotFound();
+                var filter = Builders<Product>.Filter.Eq(x => x.ProductId, product.ProductId);
+                await _product.ReplaceOneAsync(filter, product);
+                return Ok(product);
             }
-
-            updatedBook.Id = book.Id;
-
-            await _booksService.UpdateAsync(id, updatedBook);
-
-            return NoContent();
+            catch (Exception e) 
+            {
+                return BadRequest(e.Message);
+            }
         }
 
-
-
-
+        [HttpDelete]
+        public async Task<ActionResult<Product>> Delete(string id)
+        {
+            try
+            {
+                var filter = Builders<Product>.Filter.Eq(x => x.ProductId, id);
+                await _product.DeleteOneAsync(filter);
+                return Ok(id);
+            }
+            catch (Exception e) 
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

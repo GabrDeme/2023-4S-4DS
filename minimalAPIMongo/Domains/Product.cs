@@ -6,9 +6,10 @@ namespace minimalAPIMongo.Domains
     public class Product
     {
         [BsonId]//define que esta prop é id do objeto
+
         //define o nome do campo no MongoDb como "_id" e o tipo como "ObjectId"
         [BsonElement("_id"), BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string? Id { get; set; }
+        public string? ProductId { get; set; }
 
         [BsonElement("name")]
         public string? Name { get; set; }
