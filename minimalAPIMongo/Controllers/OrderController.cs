@@ -11,9 +11,15 @@ namespace minimalAPIMongo.Controllers
     public class OrderController : Controller
     {
         private readonly IMongoCollection<Order> _order;
+        private readonly IMongoCollection<Client> _client;
+        private readonly IMongoCollection<Product> _product;
+
         public OrderController(MongoDbService mongoDbService)
         {
             _order = mongoDbService.GetDatabase.GetCollection<Order>("order");
+            _client = mongoDbService.GetDatabase.GetCollection<Client>("client");
+            _product = mongoDbService.GetDatabase.GetCollection<Product>("product");
+
         }
 
         [HttpGet]
@@ -31,12 +37,27 @@ namespace minimalAPIMongo.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Order order)
+        public async Task<IActionResult<Order>> Create(OrderViewModel orderViewModel)
         {
             try
             {
-                await _order.InsertOneAsync(order);
-                return Ok(order);
+                Order order = new Order();
+                order.OrderId = orderViewModel.OrderId;
+                order.Date = orderViewModel.Date;
+                order.Status = orderViewModel.Status;
+                order.ProductId = orderViewModel.ProductId;
+                order.ClientId = orderViewModel.ClientId;
+                
+                var client = await _client.Find(x => x.ClientId == order.ClientId).FirstOrDefaultAsync();
+
+                if (client == null)
+                {
+                    return NotFound();
+                }
+
+                order.Client = client;
+                await _order!.InsertOneAsync(order);
+                return StatusCode(201, order);
             }
             catch (Exception e)
             {
@@ -55,6 +76,47 @@ namespace minimalAPIMongo.Controllers
             catch (Exception e)
             {
                 return BadRequest(e.Message);
+            }
+        }
+
+        //[HttpGet("clientId")]
+        //public async Task<ActionResult<Order>> GetByClientId(string id)
+        //{
+        //    try
+        //    {
+        //        var order = await _order.Find(p => p.Client!.ClientId == id).FirstOrDefaultAsync();
+        //        if (order == null)
+        //        {
+        //            return NotFound();
+        //        }
+
+        //        return Ok(order);
+
+        //    }
+        //    catch (Exception e)
+        //    {
+
+        //        return BadRequest(e.Message);
+        //    }
+        //}
+
+        [HttpPut]
+        public async Task<ActionResult> Update(Order updatedOrder)
+        {
+            try
+            {
+                var filter = Builders<Order>.Filter.Eq(x => x.OrderId, updatedOrder.OrderId);
+
+                await _order.ReplaceOneAsync(filter, updatedOrder);
+
+                return Ok();
+
+
+            }
+            catch (Exception)
+            {
+
+                return BadRequest();
             }
         }
 

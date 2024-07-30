@@ -15,12 +15,12 @@ namespace minimalAPIMongo.Domains
         public string? Name { get; set; }
 
         [BsonElement("price")]
-        public string? Price { get; set; }
+        public float Price { get; set; }
 
         //configuração para alterar o fato do código fugir do benefício do bd noSql de ter mais 
         //adiciona um dicionário para atributos adicionais
 
-        public Dictionary<string, string> AdditionalAttribuites { get; set; }
+        public Dictionary<string, string>? AdditionalAttribuites { get; set; }
 
         /// <summary>
         /// Ao ser instanciado um obj da calsse Product, o atributo AdditionalAtribuites já virá com um novo dicionpario, portanto estará habilitado para adicionar mais atributos

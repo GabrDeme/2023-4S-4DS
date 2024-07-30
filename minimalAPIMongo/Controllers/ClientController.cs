@@ -11,9 +11,11 @@ namespace minimalAPIMongo.Controllers
     public class ClientController : Controller
     {
         private readonly IMongoCollection<Client> _client;
+        private readonly IMongoCollection<User> _user;
         public ClientController(MongoDbService mongoDbService)
         {
             _client = mongoDbService.GetDatabase.GetCollection<Client>("client");
+            _user = mongoDbService.GetDatabase.GetCollection<User>("user");
         }
 
         [HttpGet]
@@ -30,19 +32,26 @@ namespace minimalAPIMongo.Controllers
             }
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Create(Client client)
-        //{
-        //    try
-        //    {
-        //        await _client.InsertOneAsync(client);
-        //        return Ok(client);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return BadRequest(e.Message);
-        //    }
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Create(Client client)
+        {
+            try
+            {
+                var existingClient = await _client.Find(client => client.UserId == client.UserId).FirstOrDefaultAsync();
+
+                if (existingClient != null)
+                {
+                    return BadRequest("Client already exists.");
+                }
+
+                await _client.InsertOneAsync(client);
+                return Ok(client);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Client>> GetById(string id)
