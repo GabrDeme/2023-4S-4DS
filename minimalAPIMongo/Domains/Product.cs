@@ -20,6 +20,7 @@ namespace minimalAPIMongo.Domains
         //configuração para alterar o fato do código fugir do benefício do bd noSql de ter mais 
         //adiciona um dicionário para atributos adicionais
 
+        [BsonElement("additionalAtribuites")]
         public Dictionary<string, string>? AdditionalAttribuites { get; set; }
 
         /// <summary>

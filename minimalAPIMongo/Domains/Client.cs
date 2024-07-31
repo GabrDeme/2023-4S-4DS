@@ -1,25 +1,28 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace minimalAPIMongo.Domains
 {
     public class Client
     {
         [BsonId]
-        [BsonElement("_id"), BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string? ClientId { get; set; }
+        [BsonElement("_id"), BsonRepresentation(BsonType.ObjectId)]
+        public string? Id { get; set; }
 
-        [BsonElement("UserId")]
+        [BsonElement("userId"), BsonRepresentation(BsonType.ObjectId)]
         public string? UserId { get; set; }
 
-        [BsonElement("CPF")]
+        [BsonElement("cpf")]
         public string? CPF { get; set; }
 
-        [BsonElement("Phone")]
+        [BsonElement("phone")]
         public string? Phone { get; set; }
 
-        [BsonElement("Adress")]
-        public string? Adress { get; set; }
+        [BsonElement("address")]
+        public string? Address { get; set; }
 
+
+        [BsonElement("AdditionalAtribuites")]
         public Dictionary<string, string> AdditionalAttribuites{ get; set; }
 
         public Client() 

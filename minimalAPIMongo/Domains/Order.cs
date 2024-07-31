@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using System.Text.Json.Serialization;
 
 namespace minimalAPIMongo.Domains
@@ -6,7 +7,7 @@ namespace minimalAPIMongo.Domains
     public class Order
     {
         [BsonId]
-        [BsonElement("_id"), BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        [BsonElement("_id"), BsonRepresentation(BsonType.ObjectId)]
         public string? OrderId { get; set; }
 
         [BsonElement("date")]
@@ -27,10 +28,10 @@ namespace minimalAPIMongo.Domains
         //referência para que eu consiga cadastrar um pedido com os cliente
         [BsonElement("clientId")]
         [JsonIgnore]
-        public List<string>? ClientId { get; set; }
+        public string? ClientId { get; set; }
 
 
         //referência para quando eu listar os pedidos venham os dados do cliente
-        public List<Client>? Client { get; set; }
+        public Client? Client { get; set; }
     }
 }

@@ -58,7 +58,7 @@ namespace minimalAPIMongo.Controllers
         {
             try
             {
-                var client = await _client.Find(x => x.ClientId == id).FirstOrDefaultAsync();
+                var client = await _client.Find(x => x.Id == id).FirstOrDefaultAsync();
                 return client == null ? NotFound() : Ok(client);
             }
             catch (Exception e)
@@ -72,7 +72,7 @@ namespace minimalAPIMongo.Controllers
         {
             try
             {
-                var filter = Builders<Client>.Filter.Eq(x => x.ClientId, client.ClientId);
+                var filter = Builders<Client>.Filter.Eq(x => x.Id, client.Id);
                 await _client.ReplaceOneAsync(filter, client);
                 return Ok(client);
             }
