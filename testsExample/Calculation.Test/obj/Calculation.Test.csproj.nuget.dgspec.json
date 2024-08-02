@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation.Test\\Calculation.Test.csproj": {}
+    "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation.Test\\Calculation.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation.Test\\Calculation.Test.csproj": {
+    "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation.Test\\Calculation.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation.Test\\Calculation.Test.csproj",
+        "projectUniqueName": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation.Test\\Calculation.Test.csproj",
         "projectName": "Calculation.Test",
-        "projectPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation.Test\\Calculation.Test.csproj",
+        "projectPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation.Test\\Calculation.Test.csproj",
         "packagesPath": "C:\\Users\\53144094889\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation.Test\\obj\\",
+        "outputPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\53144094889\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation\\Calculation.csproj": {
-                "projectPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation\\Calculation.csproj"
+              "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation\\Calculation.csproj": {
+                "projectPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation\\Calculation.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation\\Calculation.csproj": {
+    "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation\\Calculation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation\\Calculation.csproj",
+        "projectUniqueName": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation\\Calculation.csproj",
         "projectName": "Calculation",
-        "projectPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation\\Calculation.csproj",
+        "projectPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation\\Calculation.csproj",
         "packagesPath": "C:\\Users\\53144094889\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\teste\\Calculation\\obj\\",
+        "outputPath": "C:\\Users\\53144094889\\Desktop\\2023-4S-4DS\\testsExample\\Calculation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\53144094889\\AppData\\Roaming\\NuGet\\NuGet.Config",

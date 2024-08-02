@@ -26,7 +26,8 @@ namespace Calculation.Test
             Assert.Equal(waitedValue, add);
         }
 
-        public void TestingMinusMethod() 
+        [Fact]
+        public void TestingMinusMethod()
         {
             var x1 = 5.8;
             var x2 = 1.2;
@@ -36,17 +37,20 @@ namespace Calculation.Test
 
             Assert.Equal(waitedValue, minus);
         }
+
+        [Fact]
         public void TestingObelusMethod()
         {
             var x1 = 5;
             var x2 = 5;
-            var waitedValue = 25;
+            var waitedValue = 20;
 
             var obelus = Calculation.Multiplication(x1, x2);
 
             Assert.Equal(waitedValue, obelus);
         }
 
+        [Fact]
         public void TestingTimesMethod()
         {
             var x1 = 25;

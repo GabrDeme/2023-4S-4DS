@@ -1,0 +1,15 @@
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\bin\Debug\net8.0\EmailValidation.exe
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\bin\Debug\net8.0\EmailValidation.deps.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\bin\Debug\net8.0\EmailValidation.runtimeconfig.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\bin\Debug\net8.0\EmailValidation.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\bin\Debug\net8.0\EmailValidation.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.AssemblyInfoInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.AssemblyInfo.cs
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.csproj.CoreCompileInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.sourcelink.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\refint\EmailValidation.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\EmailValidation.genruntimeconfig.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_II\EmailValidation\obj\Debug\net8.0\ref\EmailValidation.dll

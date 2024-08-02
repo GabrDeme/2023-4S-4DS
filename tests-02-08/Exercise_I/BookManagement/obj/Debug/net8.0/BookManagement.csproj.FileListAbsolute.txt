@@ -1,0 +1,15 @@
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\bin\Debug\net8.0\BookManagement.exe
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\bin\Debug\net8.0\BookManagement.deps.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\bin\Debug\net8.0\BookManagement.runtimeconfig.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\bin\Debug\net8.0\BookManagement.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\bin\Debug\net8.0\BookManagement.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.AssemblyInfoInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.AssemblyInfo.cs
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.csproj.CoreCompileInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.sourcelink.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\refint\BookManagement.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\BookManagement.genruntimeconfig.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_I\BookManagement\obj\Debug\net8.0\ref\BookManagement.dll
