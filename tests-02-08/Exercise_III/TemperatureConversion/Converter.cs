@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace TemperatureConversion
 {
-    public static class Converter
+    public static class ConverterCToF
     {
-
+        public static double Convert(double celsius) 
+        {  
+            return (celsius * 9/5)+ 32; 
+        }
     }
 }
