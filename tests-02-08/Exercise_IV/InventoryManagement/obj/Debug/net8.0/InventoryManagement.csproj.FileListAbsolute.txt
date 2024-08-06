@@ -1,0 +1,15 @@
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\bin\Debug\net8.0\InventoryManagement.exe
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\bin\Debug\net8.0\InventoryManagement.deps.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\bin\Debug\net8.0\InventoryManagement.runtimeconfig.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\bin\Debug\net8.0\InventoryManagement.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\bin\Debug\net8.0\InventoryManagement.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.AssemblyInfoInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.AssemblyInfo.cs
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.csproj.CoreCompileInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.sourcelink.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\refint\InventoryManagement.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\InventoryManagement.genruntimeconfig.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\tests-02-08\Exercise_IV\InventoryManagement\obj\Debug\net8.0\ref\InventoryManagement.dll
