@@ -13,6 +13,7 @@ namespace TemperatureConversion.Test
         [InlineData(0, 32)]
         [InlineData(100, 212)]
         [InlineData(-40, -40)]
+
         public void TestingConverterMethod(double celsius, double expectedFahrenheit)
         {
 
@@ -22,6 +23,7 @@ namespace TemperatureConversion.Test
             //var result = converter.Convert(celsius);
 
             Assert.Equal(expectedFahrenheit, result, 2);
+
         }
     }
 }
