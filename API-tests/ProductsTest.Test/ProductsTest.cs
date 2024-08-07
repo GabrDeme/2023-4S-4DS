@@ -86,35 +86,44 @@ namespace ProductsTest.Test
         [Fact]
         public void Update() 
         {
-            
-        }
-
-        //[Fact]
-        //public void Delete() 
-        //{
-        //    var productId = Guid.NewGuid();
-
-        //    var mockRepository = new Mock<IProductsRepository>();
-        //    mockRepository.Setup(x => x.Delete(productId));
-
-        //    var result = mockRepository.Object.Delete(productId);
-
-        //    Assert.True(result);
-        //}
-
-        [Fact]
-        public void Delete() 
-        {
+            // Arrange
             Products product = new Products { Id = Guid.NewGuid(), Name = "Kiwi", Price = 0.5m };
+            var productList = new List<Products> { product };
 
-            var productList = new List<Products>();
+            var updatedProduct = new Products { Id = product.Id, Name = "Updated Kiwi", Price = 0.75m };
 
             var mockRepository = new Mock<IProductsRepository>();
-            mockRepository.Setup(x => x.Delete(product)).Callback<Products>(x => productList.Remove(product));
+            mockRepository.Setup(x => x.Update(It.IsAny<Products>())).Callback<Products>(updatedProd =>
+            {
+                var index = productList.FindIndex(p => p.Id == updatedProd.Id);
+                if (index != -1)
+                {
+                    productList[index] = updatedProd;
+                }
+            });
 
-            mockRepository.Object.Register(product);
+            // Act
+            mockRepository.Object.Update(updatedProduct);
 
-            Assert.Contains(product, productList);
+            // Assert
+            var productInList = productList.Find(p => p.Id == updatedProduct.Id);
+            Assert.NotNull(productInList);
+            Assert.Equal("Updated Kiwi", productInList.Name);
+            Assert.Equal(0.75m, productInList.Price);
+        }
+
+        [Fact]
+        public void Delete()
+        {
+            Products product = new Products { Id = Guid.NewGuid(), Name = "Kiwi", Price = 0.5m };
+            var productList = new List<Products> { product };
+
+            var mockRepository = new Mock<IProductsRepository>();
+            mockRepository.Setup(x => x.Delete(It.IsAny<Guid>())).Callback<Guid>(id => productList.RemoveAll(p => p.Id == id));
+
+            mockRepository.Object.Delete(product.Id);
+
+            Assert.DoesNotContain(product, productList);
         }
     }
 }
