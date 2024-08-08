@@ -1,0 +1,15 @@
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.AssemblyInfoInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.AssemblyInfo.cs
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.csproj.CoreCompileInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.sourcelink.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\bin\Debug\net8.0\console.exe
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\bin\Debug\net8.0\console.deps.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\bin\Debug\net8.0\console.runtimeconfig.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\bin\Debug\net8.0\console.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\bin\Debug\net8.0\console.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\refint\console.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\console.genruntimeconfig.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\obj\Debug\net8.0\ref\console.dll
