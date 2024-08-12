@@ -1,0 +1,15 @@
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\bin\Debug\net8.0\Logica.exe
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\bin\Debug\net8.0\Logica.deps.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\bin\Debug\net8.0\Logica.runtimeconfig.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\bin\Debug\net8.0\Logica.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\bin\Debug\net8.0\Logica.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.AssemblyInfoInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.AssemblyInfo.cs
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.sourcelink.json
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\refint\Logica.dll
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.pdb
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\Logica.genruntimeconfig.cache
+C:\Users\53144094889\Desktop\2023-4S-4DS\console\Logica\obj\Debug\net8.0\ref\Logica.dll

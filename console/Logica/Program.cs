@@ -1,6 +1,4 @@
-﻿
-
-Console.WriteLine("Tell me a number");
+﻿Console.WriteLine("Tell me a number");
 
 if (int.TryParse(Console.ReadLine(), out int number))
 {
