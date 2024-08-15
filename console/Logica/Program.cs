@@ -92,3 +92,13 @@
 // Exercício IV
 // Crie uma função que recebe um número como parâmetro e retorna a tabuada desse
 // número até o número 10. Utilize um laço for para gerar os múltiplos do número.
+
+Console.WriteLine($"Tell me a number");
+int number = int.Parse(Console.ReadLine());
+
+int[] table = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for(int n = 1; n < table.Length; n++)
+{
+    Console.WriteLine($"{number} x {n} = {number * n}");
+}
