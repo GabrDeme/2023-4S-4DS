@@ -1,13 +1,19 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* HEADER */
 
 header {
     width: 100%;
@@ -30,9 +36,10 @@ header {
     flex-direction: row;
 }
 
+/* HOME */
+
 .home .home-text {
     max-width: 430px;
-    margin-top: 100px;
     color: #FFFFFF;
 }
 
@@ -42,10 +49,36 @@ header {
     align-items: center;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* PROMO */
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.promo .container {
+    display: flex;
+    max-width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo .container-text {
+    max-width: 430px;
+
+}
+
+.promo h2 {
+    color: #0056b3;
+}
+
+.promo span {
+    color: #28a745;
+}
+
+/* FOOTER */
 
 footer {
     display: flex;
@@ -60,11 +93,15 @@ footer {
     color: #FFFFFF;
     justify-content: center;
     text-align: center;
+    padding: 20px 0;
 }
 
 footer .yellow-footer {
     width: 100%;
     height: 50px;
     background-color: #FFDF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
