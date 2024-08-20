@@ -1,0 +1,27 @@
+.Card {
+    display: flex;
+    width: 675px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 25px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.Check-box {
+    width: 34px;
+    height: 34px;
+    border: solid;
+    border-radius: 8px;
+}
+
+.Container {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+}
