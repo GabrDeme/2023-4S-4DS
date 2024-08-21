@@ -1,0 +1,39 @@
+.Card {
+    display: flex;
+    width: 675px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 25px;
+    gap: 50px;
+    align-items: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    justify-content: space-between; /* Alinha o conteúdo e os containers aos extremos */
+    padding-right: 20px; /* Adiciona um padding para afastar os containers da borda */
+}
+
+.Card p {
+    display: flex;
+    margin-left: 70px;
+    flex-grow: 1; /* Faz o parágrafo ocupar o espaço disponível */
+    justify-content: flex-start;
+    margin-left: -30px;
+}
+
+.Check-box {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    gap: -35px;
+}

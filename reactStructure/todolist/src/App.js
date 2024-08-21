@@ -1,12 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Card from './components/Card';
 import { useEffect, useState } from 'react';
+import TaskList from './components/List/List';
+import Card from './components/Card/Card';
 
 function App() {
   const mockData = [
     { description: 'Descrição do card 1' },
-    { description: 'Descrição do card 2' }
+    { description: 'Descrição do card 2' },
+    { description: 'Faz o L' },
+    { description: 'Faz o L' },
+    { description: 'Faz o L' },
+    { description: 'Faz o L' },
+    { description: 'Faz o L' }
   ];
 
   const [today, setToday] = useState(new Date());
@@ -26,15 +32,20 @@ function App() {
           <h1>
             {today.toLocaleDateString()}
           </h1>
-          <input placeholder="Procurar tarefa" className="Input-card"></input>
+          <input placeholder="Search task" className="Input-card"></input>
           {/* <img src="" alt="Search in the list" /> */}
-          <div>
-            {mockData.map((card, index) => (
-              <Card key={index} {...card} />
-            ))}
-          </div>
+          {/* <ul>
+            <div>
+              {mockData.map((card, index) => (
+                <Card key={index} {...card} />
+              ))}
+            </div>
+          </ul> */}
+          <TaskList/>
         </section>
-        <button placeholder="Nova tarefa" className="New-card"/>
+        <button className="New-card">
+          New task
+        </button>
       </main>
     </div>
   );

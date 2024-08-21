@@ -39,7 +39,7 @@
 }
 
 ::-webkit-input-placeholder {
-  padding: 31%;
+  padding: 35%;
   color: #FFFFFF;
 }
 
@@ -48,8 +48,17 @@
 .List-card {
   width: 743px;
   height: 495px;
+  padding: 20px;
   background-color: #1E123B;
   border-radius: 10px;
+}
+
+.List-card ul {
+  max-height: 300px; /* Define a altura máxima da lista */
+  overflow-y: auto; /* Habilita a rolagem vertical quando necessário */
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove as marcações padrão da lista */
 }
 
 /* BUTTON */
@@ -57,6 +66,12 @@
 .New-card {
   width: 200px;
   height: 50px;
-  border: #FFFFFF;
+  margin-top: 600px;
+  margin-left: 545px;
+  color: #FFFFFF;
+  font-size: 17px;
+  border: solid #FFFFFF;
+  border-radius: 10px;
   background: transparent;
+  position: absolute;
 }
