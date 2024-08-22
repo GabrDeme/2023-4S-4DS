@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 import './Card.css';
 
-function Card({ task, onEdit, onDelete, onTaskCompleted }) {
-    const [isChecked, setIsChecked] = useState(task.completed);
+function Card({ task, onEdit, onDelete }) {
+    const [isChecked, setIsChecked] = useState(false); // Default to false if 'completed' property is not used
 
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
-        onTaskCompleted(task.id); // Notify parent about completed task
+        // Assuming onTaskCompleted is handled elsewhere or not needed
     };
 
     const handleEditClick = () => {
@@ -17,28 +17,24 @@ function Card({ task, onEdit, onDelete, onTaskCompleted }) {
         <div className="Card">
             <input
                 type="checkbox"
-                className="Check-b ox"
+                className="Check-box"
                 checked={isChecked}
                 onChange={handleCheckboxChange}
             ></input>
 
-            {/* <img src="./images/ph_x-bold.svg" alt="Delete item from list" /> */}
-
-            <p>{description}</p>
+            <p>{task.description}</p> {/* Make sure to access description via task.description */}
             <section className="Container">
-
                 <button
                     className="Check-box"
                     onClick={handleEditClick}>
-                    {/* <img src="./images/ph_x-bold.svg" alt="Delete item from list" /> */}
+                    {/* Edit button content */}
                 </button>
 
                 <button
                     className="Check-box"
                     onClick={() => onDelete(task.id)}>
-                    {/* <img src="./images/mingcute_pencil-fill.svg" alt="Edit item from list" /> */}
+                    {/* Delete button content */}
                 </button>
-
             </section>
         </div>
     );
