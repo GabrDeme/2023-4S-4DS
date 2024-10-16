@@ -10,7 +10,7 @@ Welcome to the **Fourth Semester of Systems Development** repository!
 ### 2. Testing
 - **Testing with xUnit**: Implementing unit and integration testing using the xUnit framework to ensure code quality and reliability.
 
-### 3. Revision
+### 3. Reviews
 - **UI/UX**: Revisiting the principles of user interface and user experience design to enhance application usability.
 - **Web Structure**: Understanding the structure of web applications and the importance of semantic HTML.
 - **React.js**: Refreshing knowledge on React.js, focusing on components, state management, and lifecycle methods.
